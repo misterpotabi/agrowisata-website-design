@@ -43,11 +43,12 @@ export default function AboutSection() {
               className="rounded-lg shadow-lg w-full h-64 md:h-96 object-cover"
             />
           </div>
-          <div>
+          {/* ✅ Tambahkan class text-center di mobile */}
+          <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Visi & Misi Kami</h3>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h4 className="text-lg font-semibold text-emerald-700 mb-3 flex items-center">
+                <h4 className="text-lg font-semibold text-emerald-700 mb-3 flex items-center justify-center md:justify-start">
                   <Award className="h-5 w-5 mr-2" />
                   Visi
                 </h4>
@@ -57,11 +58,11 @@ export default function AboutSection() {
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h4 className="text-lg font-semibold text-emerald-700 mb-3 flex items-center">
+                <h4 className="text-lg font-semibold text-emerald-700 mb-3 flex items-center justify-center md:justify-start">
                   <Heart className="h-5 w-5 mr-2" />
                   Misi
                 </h4>
-                <ul className="text-gray-600 space-y-2">
+                <ul className="text-gray-600 space-y-2 text-left inline-block">
                   <li className="flex items-start">
                     <span className="text-emerald-600 mr-2">•</span>
                     Menyediakan edukasi pertanian berkualitas tinggi
